@@ -3,10 +3,10 @@ import {EXAMP} from "../actions/actionConst";
 const initialState = {
     post: [
         {
-            hui: 'hui'
+            title: 'title1'
         },
         {
-            hui: 'hui2'
+            title: 'title2'
         }
     ]
 };
@@ -20,10 +20,10 @@ const reducer = (state = initialState, action) => {
                 ...state,
                 post: [
                     {
-                        hui:'Example'
+                        title: 'Example'
                     },
                     {
-                        hui:'Example2'
+                        title: 'Example2'
                     }
                 ]
             };
@@ -32,6 +32,5 @@ const reducer = (state = initialState, action) => {
             return state;
     }
 }
-
 
 export default reducer;
